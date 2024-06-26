@@ -19,20 +19,20 @@ pipeline {
       }
     }
   
-     stage('Building Docker Image for the app') {
+     stage('Docker image building......') {
             steps {
                 script {
                  
                   sh 'printenv'
                   sh 'git version'
                   //sh 'docker build -t good777lord/node-app:""$Build_ID"".'
-                  sh 'docker build -t good777lord/node-app4.0 .'
+                  sh 'docker build -t good777lord/node-app5.0 .'
                 }
             }
         }
 
 
-        stage('Deploying the Docker Image to DockerHub') {
+        stage('pushing Docker Image to DockerHub') {
             steps {
                 script {
                   
@@ -41,7 +41,7 @@ pipeline {
             }
             //normally
             //sh 'docker push good777lord/node-app:""$Build_ID""'
-            sh 'docker push good777lord/node-app4.0:latest'
+            sh 'docker push good777lord/node-app5.0:latest'
         }
             }   
         }
