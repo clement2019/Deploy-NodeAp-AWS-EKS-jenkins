@@ -23,7 +23,15 @@ sudo curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.6/
 sudo chmod +x ./kubectl
 sudo mkdir -p $HOME/bin && sudo cp ./kubectl $HOME/bin/kubectl && export PATH=$PATH:$HOME/bin
 
+## install aws cli
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" 
+sudo apt install unzip 
+unzip awscliv2.zip 
+sudo ./aws/install
 
+#check the version
+
+aws --version
 
 # install docker
 

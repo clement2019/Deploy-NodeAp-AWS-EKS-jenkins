@@ -1,0 +1,61 @@
+## workflow processes and commands used for this project
+
+1.0 authenticate yourself in aws within the vscode with iam user
+
+    aws configure
+
+    aws sts get-caller-identity
+
+    aws s3 ls
+
+ 
+
+ 2.0 created all the terraform files 
+
+     backend.tf
+
+     main.tf
+
+     provider.tf
+
+     security.tf
+
+     vpc.tf
+
+     user-data.sh
+
+     
+
+ 3.0  Run this command to initialize the backend services
+
+      terraform init
+
+
+
+4.0  Run this comad to format all your terraform files
+
+     terraform fmt
+
+
+
+5.0  Run this command to viladate your terraform script
+
+     terraform validate
+
+
+
+6.0  Run this command to showcase all the recourses you want to create using terraform
+
+     terraform plan
+
+     
+
+7.0  Run this command to apply all you resources and create the all within aws infrastruct
+
+     terraform apply --auto-approve
+
+     
+
+ 8.0 Run this command to destroy all the rescourses created using terraform
+
+     terraform destroy    
