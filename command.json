@@ -35,7 +35,7 @@ https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
 6. ## Create EKS cluster
 eksctl create cluster --name eks-cluster-209 --node-type t2.large --nodes 1 --nodes-min 1 --nodes-max 2 --region eu-west-2
 
-## Get cluster
+## Get cluster now
 eksctl get cluster 
 
 ## Get EKS Cluster service
