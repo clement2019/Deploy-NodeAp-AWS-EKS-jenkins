@@ -26,7 +26,7 @@ pipeline {
                   sh 'printenv'
                   sh 'git version'
                   //sh 'docker build -t good777lord/node-app:""$Build_ID"".'
-                  sh 'docker build -t good777lord/node-app5.0 .'
+                  sh 'docker build -t good777lord/node-app6.0 .'
                 }
             }
         }
@@ -36,12 +36,12 @@ pipeline {
             steps {
                 script {
                   
-                 withCredentials([string(credentialsId: 'dockerhub_ID', variable: 'dockerhub_ID')]) {
+                 withCredentials([string(credentialsId: 'dockerID', variable: 'dockerID')]) {
                     sh 'docker login -u good777lord -p ${dockerhub_ID}'
             }
             //normally
             //sh 'docker push good777lord/node-app:""$Build_ID""'
-            sh 'docker push good777lord/node-app5.0:latest'
+            sh 'docker push good777lord/node-app6.0:latest'
         }
             }   
         }
