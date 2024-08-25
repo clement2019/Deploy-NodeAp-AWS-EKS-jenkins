@@ -15,7 +15,11 @@ pipeline {
      
     stage('intialising npm installation.......') {
       steps {
-        sh 'npm install'
+        sh 'npm install express'
+        sh 'npm install 18'
+        sh 'npm version'
+        sh 'node version'
+       
       }
     }
   
