@@ -43,7 +43,7 @@ pipeline {
             steps {
                 script {
                   
-                 withCredentials([string(credentialsId: 'DOCKERID', variable: 'dockerID')]) {
+                 withCredentials([string(credentialsId: 'DOCKERID', variable: 'DOCKERID')]) {
                     sh 'docker login -u good777lord -p ${DOCKERID}'
             }
             //normally
