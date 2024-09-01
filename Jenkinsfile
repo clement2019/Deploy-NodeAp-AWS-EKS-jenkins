@@ -43,8 +43,8 @@ pipeline {
             steps {
                 script {
                   
-                 withCredentials([string(credentialsId: 'dockerID', variable: 'dockerID')]) {
-                    sh 'docker login -u good777lord -p ${dockerID}'
+                 withCredentials([string(credentialsId: 'DOCKERID', variable: 'dockerID')]) {
+                    sh 'docker login -u good777lord -p ${DOCKERID}'
             }
             //normally
             //sh 'docker push good777lord/node-app:""$Build_ID""'
@@ -57,7 +57,7 @@ pipeline {
         stage('Deploying Node App to Kubernetes') {
           steps {
             script {
-              sh ('aws eks update-kubeconfig --name eks-cluster-209 --region eu-west-2')
+              sh ('aws eks update-kubeconfig --name eks-cluster-201 --region eu-west-2')
               sh "kubectl get ns"
               sh "kubectl apply -f deployment.yaml"
         }

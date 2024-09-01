@@ -70,7 +70,7 @@
 
      terraform destroy 
  ## ================================================================================ 
- -- Once terrsform has created all the resources 
+ -- Once terraform has created all the resources 
  -- check if the resources were created accordingly in aws
 --- terrform will output the the public Ip of the jenkinserver built or you you can copy manaually
     if you cant find it
