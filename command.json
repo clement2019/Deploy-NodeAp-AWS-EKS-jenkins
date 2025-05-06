@@ -43,6 +43,9 @@ eksctl create cluster --name eks-cluster-201 --node-type t2.medium --nodes 2 --n
 ## Get cluster now
 eksctl get cluster 
 
+## update your cluster now
+aws eks update-kubeconfig --name eks-cluster-201 --region eu-west-2
+
 ## Get EKS Cluster service
 eksctl get cluster --name eks-cluster-201 --region eu-west-2
 

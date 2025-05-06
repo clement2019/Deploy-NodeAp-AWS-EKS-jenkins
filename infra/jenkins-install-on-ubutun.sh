@@ -4,7 +4,7 @@
 sudo apt update
 sudo apt install git -y
 
-# iInstall Terraform on Ubuntu 22.04|20.04 |18.04
+# Install Terraform on Ubuntu 22.04|20.04 |18.04
 
 sudo apt-get update
 sudo apt install  software-properties-common gnupg2 curl
