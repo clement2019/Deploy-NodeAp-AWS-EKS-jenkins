@@ -58,6 +58,7 @@ pipeline {
           steps {
             script {
               sh ('aws eks update-kubeconfig --name eks-cluster-201 --region eu-west-2')
+              sh 'kubectl config current-context'
               sh "kubectl get ns"
               sh "kubectl apply -f deployment.yaml"
         }

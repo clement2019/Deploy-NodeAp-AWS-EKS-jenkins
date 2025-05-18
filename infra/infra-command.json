@@ -147,12 +147,12 @@ aws s3 ls
 
 ---Because you bulding docker image in your pipeline be sure that docker was installed on this machine
 
------- Now to isntall kubernes on this machine first run the following command
+------ Now before installing aws-eks kubernetes on this machine first run the following command
 $ kubectl get pods
 $ kubectl get nodes
 $ kubectl get namespace
 
-----Now if we have eksctl on ruuning on thsi machine now lest isntall aws eks
+----Now if we have eksctl is ruuning on this machine now lest install aws eks
 by running this command below
 
 ## Create EKS cluster
