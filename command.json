@@ -10,7 +10,7 @@ sudo ./aws/install
 #check the version
 
 aws --version
-2. then create IAM user with adminAcess in AWS with  access key and secret key generated
+2. then create IAM user with adminAccess in AWS with  access key and secret key generated
 Run aws configure
 Authenticate with the command below
 aws sts get-caller-identity
